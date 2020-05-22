@@ -1,9 +1,9 @@
-export { Transformer } from './transformer'
-export { ValidationError, ValidationTypeError, ValidationMemberError, ValidationErrors } from './errors'
-export { Result, ValidationResult, ok, error, isOk, isError } from './result'
+export { Transformer } from './transformer.ts'
+export { ValidationError, ValidationTypeError, ValidationMemberError, ValidationErrors } from './errors.ts'
+export { Result, ValidationResult, ok, error, isOk, isError } from './result.ts'
 
-import { any, number, string, boolean, literal, typeOf, instanceOf } from './primitives'
-import { nullable, optional, array, tuple, obj, either, withDefault } from './combinators'
+import { any, number, string, boolean, literal, typeOf, instanceOf } from './primitives.ts'
+import { nullable, optional, array, tuple, obj, either, withDefault } from './combinators.ts'
 
 export default {
   any,

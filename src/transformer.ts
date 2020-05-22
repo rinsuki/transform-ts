@@ -1,5 +1,5 @@
-import { ValidationResult, isOk, ok } from './result'
-import { ValidationErrors } from './errors'
+import { ValidationResult, isOk, ok } from './result.ts'
+import { ValidationErrors } from './errors.ts'
 
 type TransformFn<A, B> = (x: A) => ValidationResult<B>
 
